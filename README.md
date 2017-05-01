@@ -22,7 +22,7 @@ Slicer plugin offers useful features that OctoPrint's built-in slicer doesn't ha
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
 
-    https://github.com/kennethjiang/OctoPrint-Slicer/archive/master.zip
+    https://github.com/DeltaMaker/OctoPrint-Slicer/archive/master.zip
 
 ## Contribute
 
