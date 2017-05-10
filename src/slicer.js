@@ -20,7 +20,7 @@ function isDev() {
     return window.location.hostname == "localhost";
 }
 
-if ( ! isDev() && typeof(Raven) !== 'undefined' ) {
+if ( ! isDev() && typeof(Raven) !== 'undefined' ) { /*
     Raven.config('https://85bd9314656d40da9249aec5a32a2b52@sentry.io/141297', {
         release: '1.2.6',
         ignoreErrors: [
@@ -33,11 +33,11 @@ if ( ! isDev() && typeof(Raven) !== 'undefined' ) {
             "SVG_MATRIX_NOT_INVERTABLE",
             "The index is not in the allowed range.",
         ],
-    }).install();
+    }).install(); */
 }
 
 function SlicerViewModel(parameters) {
-    mixpanel.track("App Loaded");
+    //mixpanel.track("App Loaded");
 
     var self = this;
 
@@ -65,7 +65,7 @@ function SlicerViewModel(parameters) {
         if (!self.slicingViewModel.enableSlicingDialog() && !force) {
             return;
         }
-        mixpanel.track("Load STL");
+        //mixpanel.track("Load STL");
 
         $('a[href="#tab_plugin_slicer"]').tab('show');
 
@@ -192,8 +192,7 @@ function SlicerViewModel(parameters) {
 
         // Buttons on the canvas, and their behaviors.
         // TODO: it's not DRY. mix of prez code and logics. need to figure out a better way
-        $("#slicer-viewport").empty().append('<div class="report"><span>Got issues or suggestions? <a target="_blank" href="https://goo.gl/forms/P9Vw2fZRYJCy7RAn1">Click here!</a></span></div>\
-                  <div class="model">\
+        $("#slicer-viewport").empty().append('<div class="model">\
                     <button class="rotate disabled" title="Rotate"><img src="'
                         + PLUGIN_BASEURL
                         + 'slicer/static/img/rotate.png"></button>\
@@ -377,7 +376,7 @@ function SlicerViewModel(parameters) {
     };
 
     self.slice = function() {
-        mixpanel.track("Slice Model");
+        //mixpanel.track("Slice Model");
 
         var target = self.slicingViewModel.target;
         var sliceRequestData;

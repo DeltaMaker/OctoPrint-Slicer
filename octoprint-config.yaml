@@ -10,7 +10,6 @@ plugins:
   cura:
     cura_engine: /usr/bin/CuraEngine
   discovery:
-    upnpUuid: e7f6ce9b-2ec8-4049-b753-8ed6c4917bc2
   slic3r:
     slic3r_engine: /Slic3r/slic3r.pl
   softwareupdate:
